@@ -42,6 +42,7 @@ It should be pretty straight forward. You are not required to put in a row limit
 
 ##Data Panel
 ![Data Panel Capture](https://raw.githubusercontent.com/windweller/postgresql-excel-addIn/master/ScreenCapture/dataPanel.PNG)
+
 If you don't remember your table name, click the drop down button on the "table name" field and it will show you all the tables in your database. Click "get columns" after you fill in the table name, and you can select one or multiple columns. If you want to use more advanced PostgreSQL clauses or functions, you can customize the generated SQL textbox down and execute the query just like you would do in a command line setting.
 
 ##Notice & Wiki
