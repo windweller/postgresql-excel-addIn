@@ -1,4 +1,4 @@
-postgresql Excel Add-In
+Postgresql Excel Add-In
 ====================
 
 PostgreSQL Excel Add-In
