@@ -27,6 +27,11 @@ Then (here is why this Add-In is superior to current Windows database import opt
 
 Click "list data source" button and it will lead you to system Database Source Manager. Then click "Drivers" tab. If you have already installed the corresponding driver, it will show up (you might have to scroll down the list). Click "User DSN" tab, click "add" button, and fill the requested fields (server name, user name, password... you can find tutorials online on how to fill those fields). If you are truly uncertain, this is an example for PostgreSQL:
 
-![DSN Screen Capture](https://github.com/windweller/postgresql-excel-addIn/blob/master/ScreenCapture/AddDSN.PNG)
+![DSN Screen Capture](https://raw.githubusercontent.com/windweller/postgresql-excel-addIn/master/ScreenCapture/AddDSN.PNG)
 
+After filling out the fields, click "test" to test your connection and if it passes, congrats, you have your DSN and forever save you from the cumbersome filling in user name and passwords again!
+
+Then write down your DSN name (the "DataSource" field in "add" screen). For the example above, the DSN name is "psql_server_uni_32". Put this name down on the "Data Source" field of this Add-In and done! (Don't click "Connect" button just yet because you will need a table name to retrieve your record)
+
+##How to navigate through Control Panel?
 
