@@ -19,14 +19,6 @@ Private Sub ColumnList_MouseUp(ByVal Button As Integer, ByVal Shift As Integer, 
    End If
 End Sub
 
-Private Sub ComboBox1_Change()
-    If ComboBox1.Value = "PostgreSQL" Then
-        DataSource.Value = "psql_server_uni_32"
-    ElseIf ComboBox1.Value = "MySQL" Then
-        DataSource.Value = ""
-    End If
-End Sub
-
 Private Sub CommandButton1_Click()
     Dim strBatchName As String
     Dim wsh As Object
