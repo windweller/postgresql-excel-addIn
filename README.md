@@ -33,5 +33,22 @@ After filling out the fields, click "test" to test your connection and if it pas
 
 Then write down your DSN name (the "DataSource" field in "add" screen). For the example above, the DSN name is "psql_server_uni_32". Put this name down on the "Data Source" field of this Add-In and done! (Don't click "Connect" button just yet because you will need a table name to retrieve your record)
 
-##How to navigate through Control Panel?
+##Control Panel
+![Control Panel Capture](https://raw.githubusercontent.com/windweller/postgresql-excel-addIn/master/ScreenCapture/controlPanel.PNG)
 
+This is the quick access control panel, where you can't do a lot of stuff with SQL. The fields and buttons quickly generate SQL clauses that retrieve all the columns (fields) in your table. Before you click "Connect", you have to fill in the table name field. If you don't remember any table name, go to Data Panel.
+
+It should be pretty straight forward. You are not required to put in a row limit, but it's suggested to put in one. The generated SQL textbox is locked and can't be edited. If you want to write custom SQL, go to Data Panel.
+
+##Data Panel
+![Data Panel Capture](https://raw.githubusercontent.com/windweller/postgresql-excel-addIn/master/ScreenCapture/dataPanel.PNG)
+If you don't remember your table name, click the drop down button on the "table name" field and it will show you all the tables in your database. Click "get columns" after you fill in the table name, and you can select one or multiple columns. If you want to use more advanced PostgreSQL clauses or functions, you can customize the generated SQL textbox down and execute the query just like you would do in a command line setting.
+
+##Notice & Wiki
+![Wiki Panel Capture](https://raw.githubusercontent.com/windweller/postgresql-excel-addIn/master/ScreenCapture/wikiPanel.PNG)
+
+1. Not all the SQL clauses are tested on MySQL, but it should work just fine.
+2. Currently "Categorized By" field is removed due to the speciality of GROUP BY syntax.
+3. If you want to use this Add-In to connect to MySQL, you can find corresponding ODBC driver [here](http://dev.mysql.com/downloads/connector/odbc/).
+4. This Add-In does not work for Mac. If you are a professional user and wish to have stronger functionalities, try Power BI for Office 365 product for $52 per user per month.
+5. If you have any concern or suggestion, feel free to send me an email: aimingnie@gmail.com 
