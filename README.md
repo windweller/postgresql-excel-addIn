@@ -13,6 +13,9 @@ It can finish following SQL tasks:
 
 This Add-In also provides a very easy way to add ODBC driver to User/System DSN (DataSource Name). 
 
+##How to Install?
+Download "Database.xlam" file and just add it as a normal Excel Add-In. It is not password-protected, so if you want to modify some of the code, please go ahead. What you can also do (if you are interested in the raw code) is to go to "VBA Raw Code" folder and check the actual VBA code.
+
 Notice: this Add-In will not work on Macs, and if you are using Macs, congratulations, you already have very complete and strong database support. Go to Data tab and click Database from External Datasource. 
 
 ##What is DSN?
