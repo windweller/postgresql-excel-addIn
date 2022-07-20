@@ -1,4 +1,4 @@
-#PostgreSQL Excel Add-In
+# PostgreSQL Excel Add-In
 
 PostgreSQL is currently the fastest rising alternative database to commerical products like Oracle or recently aquired database MySQL. PostgreSQL implements strict SQL specifications compared to MySQL's not-so-strict implementation. In some research PostgreSQL is better at performing [certain tasks](http://www.wikivs.com/wiki/MySQL_vs_PostgreSQL#PostgreSQL) (join/subquerying) than MySQL, but to a large extent, we can consider these two databases equal.
 
@@ -13,12 +13,12 @@ It can finish following SQL tasks:
 
 This Add-In also provides a very easy way to add ODBC driver to User/System DSN (DataSource Name). 
 
-##How to Install?
+## How to Install?
 Download "Database.xlam" file and just add it as a normal Excel Add-In. It is not password-protected, so if you want to modify some of the code, please go ahead. What you can also do (if you are interested in the raw code) is to go to "VBA Raw Code" folder and check the actual VBA code.
 
 Notice: this Add-In will not work on Macs, and if you are using Macs, congratulations, you already have very complete and strong database support. Go to Data tab and click Database from External Datasource. 
 
-##What is DSN?
+## What is DSN?
 
 Programs use database drivers to connect to databases. Database developers for PostgreSQL and MySQL provide those drivers at their official website. For connecting to databases inside Excel, you have to download ODBC driver (there are also JDBC driver but it's for Java programs). 
 
@@ -36,19 +36,19 @@ After filling out the fields, click "test" to test your connection and if it pas
 
 Then write down your DSN name (the "DataSource" field in "add" screen). For the example above, the DSN name is "psql_server_uni_32". Put this name down on the "Data Source" field of this Add-In and done! (Don't click "Connect" button just yet because you will need a table name to retrieve your record)
 
-##Control Panel
+## Control Panel
 ![Control Panel Capture](https://raw.githubusercontent.com/windweller/postgresql-excel-addIn/master/ScreenCapture/controlPanel.PNG)
 
 This is the quick access control panel, where you can't do a lot of stuff with SQL. The fields and buttons quickly generate SQL clauses that retrieve all the columns (fields) in your table. Before you click "Connect", you have to fill in the table name field. If you don't remember any table name, go to Data Panel.
 
 It should be pretty straight forward. You are not required to put in a row limit, but it's suggested to put in one. The generated SQL textbox is locked and can't be edited. If you want to write custom SQL, go to Data Panel.
 
-##Data Panel
+## Data Panel
 ![Data Panel Capture](https://raw.githubusercontent.com/windweller/postgresql-excel-addIn/master/ScreenCapture/dataPanel.PNG)
 
 If you don't remember your table name, click the drop down button on the "table name" field and it will show you all the tables in your database. Click "get columns" after you fill in the table name, and you can select one or multiple columns. If you want to use more advanced PostgreSQL clauses or functions, you can customize the generated SQL textbox down and execute the query just like you would do in a command line setting.
 
-##Notice & Wiki
+## Notice & Wiki
 ![Wiki Panel Capture](https://raw.githubusercontent.com/windweller/postgresql-excel-addIn/master/ScreenCapture/wikiPanel.PNG)
 
 1. Not all the SQL clauses are tested on MySQL, but it should work just fine.
